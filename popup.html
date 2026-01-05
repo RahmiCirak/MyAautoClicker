@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequential Auto Clicker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Auto Clicker</h2>
+
+    <label for="selectors">Selectors (one per line) or X,Y:</label>
+    <textarea id="selectors" placeholder="#submit-btn&#10;.next-page&#10;100,200"></textarea>
+
+    <button id="pick" style="margin-bottom: 8px; background-color: #f39c12; color: white;">+ Pick Element</button>
+
+    <div style="margin-bottom: 8px; font-size: 12px;">
+      <label>
+        <input type="checkbox" id="smart-selector" checked> Smart Selectors (Robust)
+      </label>
+    </div>
+
+    <div class="input-group">
+      <label for="delay">Delay (ms):</label>
+      <input type="number" id="delay" value="1000" min="0">
+    </div>
+
+    <div class="input-group" style="margin-top: 8px;">
+      <label>
+        <input type="checkbox" id="infinite"> Infinite Loop
+      </label>
+      <label for="repeats" id="repeats-label" style="margin-left: 10px;">Repeats:</label>
+      <input type="number" id="repeats" value="1" min="1" style="width: 50px;">
+    </div>
+
+    <div class="button-group">
+      <button id="start">Start</button>
+      <button id="stop" class="hidden">Stop</button>
+    </div>
+
+    <div id="status">Ready</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
