@@ -10,7 +10,7 @@ Bu proje, modern web teknolojileri (JavaScript ES6+, Chrome Extension API) kulla
 
 ---
 
-## 📑 İçindekiler
+##  İçindekiler
 
 - [Özellikler](#-özellikler)
 - [Teknik Mimari](#-teknik-mimari)
@@ -21,7 +21,7 @@ Bu proje, modern web teknolojileri (JavaScript ES6+, Chrome Extension API) kulla
 
 ---
 
-## 🚀 Özellikler
+##  Özellikler
 
 *   **Akıllı Seçici (Smart Selector)**: Dinamik olarak değişen DOM yapılarında bile öğeleri hatasız bulabilen "Shortest Unique Path" (En Kısa Benzersiz Yol) algoritması. `data-testid`, `aria-label` gibi kararlı nitelikleri önceliklendirir.
 *   **Görsel Seçim Modu (Visual Picker)**: Kod yazmanıza gerek kalmadan, doğrudan sayfa üzerindeki öğelere tıklayarak seçim yapmanızı sağlayan interaktif arayüz.
@@ -32,7 +32,7 @@ Bu proje, modern web teknolojileri (JavaScript ES6+, Chrome Extension API) kulla
 
 ---
 
-## 🏗️ Teknik Mimari
+##  Teknik Mimari
 
 Bu proje, Chrome'un izole edilmiş bileşen mimarisine (Isolated World Architecture) dayanır.
 
@@ -52,7 +52,7 @@ Bu proje, Chrome'un izole edilmiş bileşen mimarisine (Isolated World Architect
 
 ---
 
-## 📥 Kurulum
+##  Kurulum
 
 Bu eklenti, geliştirme aşamasında olduğu için "Unpacked" (Paketlenmemiş) modda yüklenir.
 
@@ -66,7 +66,7 @@ Eklenti başarıyla yüklendiğinde araç çubuğunuzda ikonu belirecektir.
 
 ---
 
-## 📖 Kullanım Kılavuzu
+##  Kullanım Kılavuzu
 
 ### 1. Öğeleri Seçme
 Otomasyona başlamadan önce tıklanacak öğeleri belirlemeniz gerekir.
@@ -85,7 +85,7 @@ Otomasyona başlamadan önce tıklanacak öğeleri belirlemeniz gerekir.
 
 ---
 
-## 📂 Dizin Yapısı
+##  Dizin Yapısı
 
 ```bash
 MyAautoClıcker/
@@ -99,7 +99,7 @@ MyAautoClıcker/
 
 ---
 
-## 👨‍💻 Geliştirici Notları
+## 👨 Geliştirici Notları
 
 *   **Güvenlik**: Bu eklenti sadece çalıştırdığınız (aktif) sekmede yetki sahibidir (`activeTab` izni). Arkaplanda diğer sekmelerinizi izleyemez.
 *   **Performans**: `content.js`, sayfa performansını etkilememek için "Event Delegation" ve "Lazy Evaluation" prensiplerini kullanır.
